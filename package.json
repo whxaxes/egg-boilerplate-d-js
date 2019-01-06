@@ -8,12 +8,13 @@
     "egg-scripts": "^2.5.0"
   },
   "devDependencies": {
+    "@types/egg": "^1.5.0",
     "autod": "^3.0.1",
     "autod-egg": "^1.0.0",
-    "egg-bin": "^4.3.5",
+    "egg-bin": "^4.10.0",
     "egg-ci": "^1.8.0",
     "egg-mock": "^3.14.0",
-    "egg-ts-helper": "^1.17.1",
+    "egg-ts-helper": "1.20.0",
     "eslint": "^4.11.0",
     "eslint-config-egg": "^6.0.0",
     "webstorm-disable-index": "^1.2.0"
@@ -21,10 +22,15 @@
   "engines": {
     "node": ">=8.9.0"
   },
+  "egg": {
+    "require": [
+      "egg-ts-helper/register"
+    ]
+  },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-boilerplate-d-js",
     "stop": "egg-scripts stop --title=egg-server-boilerplate-d-js",
-    "dev": "egg-bin dev -r egg-ts-helper/register",
+    "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
