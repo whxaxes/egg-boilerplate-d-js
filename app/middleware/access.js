@@ -1,5 +1,5 @@
 /**
- * @returns {(ctx: import('egg').Context, next: any) => Promise<any>}
+ * @returns {(ctx: Egg.Context, next: any) => Promise<any>}
  */
 module.exports = () => {
   return async (ctx, next) => {

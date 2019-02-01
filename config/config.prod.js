@@ -1,5 +1,5 @@
 module.exports = () => {
-  /** @type {import('egg').EggAppConfig} */
+  /** @type {Egg.EggAppConfig} */
   const config = exports = {};
 
   config.biz = {

@@ -1,8 +1,8 @@
 /**
- * @param {import('egg').EggAppInfo} appInfo
+ * @param {Egg.EggAppInfo} appInfo
  */
 module.exports = appInfo => {
-  /** @type {import('egg').EggAppConfig} */
+  /** @type {Egg.EggAppConfig} */
   const config = exports = {};
 
   // use for cookie sign key, should change to your own and keep security
