@@ -6,10 +6,10 @@ import ExportTest = require('../../../app/custom/Test');
 
 declare module 'egg' {
   interface Context {
-    custom: TC101;
+    custom: TC100;
   }
 
-  interface TC101 {
+  interface TC100 {
     Test: ReturnType<typeof ExportTest>;
   }
 }
