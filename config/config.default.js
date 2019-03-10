@@ -11,6 +11,20 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.customLoader = {
+    model: {
+      directory: 'app/model',
+      caseStyle: 'upper',
+      inject: 'app',
+    },
+
+    custom: {
+      directory: 'app/custom',
+      caseStyle: 'upper',
+      inject: 'ctx',
+    },
+  };
+
   return {
     ...config,
 
